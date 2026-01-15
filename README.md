@@ -30,7 +30,8 @@ tap_click/
 ├── stone_pebble_tap.mp3
 ├── two_wooden_taps.mp3
 ├── bamboo_knock_1.mp3
-└── bamboo_knock_2.mp3
+├── bamboo_knock_2.mp3
+└── low_hollow_knock.mp3
 ```
 
 ### ✅ Success & Confirmation
@@ -80,9 +81,54 @@ transition_loading/
 ├── sand_pour_1.mp3
 ├── sand_pour_2.mp3
 ├── upward_swoosh.mp3
-├── low_hollow_knock.mp3
 └── swipe_effect.mp3
 ```
+
+
+
+## 📥 Direct Downloads
+
+Download individual sound effects directly by clicking the links below:
+
+### 🖱️ Tap & Click Sounds
+- [light_wooden_knock.mp3](tap_click/light_wooden_knock.mp3) - Gentle wooden knock sound
+- [stone_pebble_tap.mp3](tap_click/stone_pebble_tap.mp3) - Natural stone pebble tap
+- [two_wooden_taps.mp3](tap_click/two_wooden_taps.mp3) - Two consecutive wooden taps
+- [bamboo_knock_1.mp3](tap_click/bamboo_knock_1.mp3) - First bamboo knock variation
+- [bamboo_knock_2.mp3](tap_click/bamboo_knock_2.mp3) - Second bamboo knock variation
+- [low_hollow_knock.mp3](tap_click/low_hollow_knock.mp3) - Low hollow knock sound
+
+### ✅ Success & Confirmation
+- [crystal_glass_clink.mp3](success_confirmation/crystal_glass_clink.mp3) - Crystal glass clinking sound
+- [ceramic_bowl_tap.mp3](success_confirmation/ceramic_bowl_tap.mp3) - Ceramic bowl tap
+- [stone_chime.mp3](success_confirmation/stone_chime.mp3) - Natural stone chime
+- [glass_tap_sparkle_1.mp3](success_confirmation/glass_tap_sparkle_1.mp3) - First glass sparkle variation
+- [glass_tap_sparkle_2.mp3](success_confirmation/glass_tap_sparkle_2.mp3) - Second glass sparkle variation
+
+### ⚠️ Error & Alert
+- [low_wooden_thud.mp3](error_alert/low_wooden_thud.mp3) - Low wooden thud sound
+- [two_muted_knocks.mp3](error_alert/two_muted_knocks.mp3) - Two muted knock sounds
+- [downward_stone_tap.mp3](error_alert/downward_stone_tap.mp3) - Downward stone tap
+- [spark_crackle.mp3](error_alert/spark_crackle.mp3) - Spark crackle effect
+- [hollow_shell_tap.mp3](error_alert/hollow_shell_tap.mp3) - Hollow shell tap
+
+### 🔔 Notifications
+- [water_drop.mp3](notification/water_drop.mp3) - Gentle water drop sound
+- [bird_chirp.mp3](notification/bird_chirp.mp3) - Natural bird chirp
+- [cricket_chirp.mp3](notification/cricket_chirp.mp3) - Cricket chirping sound
+- [dolphin_click_1.mp3](notification/dolphin_click_1.mp3) - First dolphin click variation
+- [dolphin_click_2.mp3](notification/dolphin_click_2.mp3) - Second dolphin click variation
+
+### 🔄 Transition & Loading
+- [soft_whoosh.mp3](transition_loading/soft_whoosh.mp3) - Soft whoosh transition
+- [gentle_whoosh.mp3](transition_loading/gentle_whoosh.mp3) - Gentle whoosh effect
+- [rustling_leaves.mp3](transition_loading/rustling_leaves.mp3) - Rustling leaves sound
+- [sand_pour_1.mp3](transition_loading/sand_pour_1.mp3) - First sand pour variation
+- [sand_pour_2.mp3](transition_loading/sand_pour_2.mp3) - Second sand pour variation
+- [upward_swoosh.mp3](transition_loading/upward_swoosh.mp3) - Upward swoosh effect
+- [swipe_effect.mp3](transition_loading/swipe_effect.mp3) - Swipe transition effect
+
+
 
 ## 🚀 Usage
 
@@ -200,3 +246,43 @@ If you have questions or need help integrating these sound effects:
 ---
 
 **Made with ❤️ and duas for better user experiences**✨
+
+## 🌊 White Noise & Ambience
+
+Continuous background sounds for focus, sleep, or relaxation.
+
+- [Airplane](white_sounds/airplane/airplane.mp3)
+- [Bubbles](white_sounds/bubbles/bubbles.mp3)
+- [Campfire](white_sounds/campfire/campfire.mp3)
+- [Coffeeshop](white_sounds/coffeeshop/coffeeshop.mp3)
+- [Desert](white_sounds/desert/desert.mp3)
+- [Fire](white_sounds/fire/fire.mp3)
+- [Fireplace](white_sounds/fireplace/fireplace.mp3)
+- [Forest](white_sounds/forest/forest.mp3)
+- **Keyboard**
+  - [backspace.mp3](white_sounds/keyboard/backspace.mp3)
+  - [key-01.mp3](white_sounds/keyboard/key-01.mp3)
+  - [key-02.mp3](white_sounds/keyboard/key-02.mp3)
+  - [key-03.mp3](white_sounds/keyboard/key-03.mp3)
+  - [key-04.mp3](white_sounds/keyboard/key-04.mp3)
+  - [key-05.mp3](white_sounds/keyboard/key-05.mp3)
+  - [space.mp3](white_sounds/keyboard/space.mp3)
+- [Leaves](white_sounds/leaves/leaves.mp3)
+- [Ocean Waves](white_sounds/ocean-waves/ocean-waves.mp3)
+- [Rain and Thunder](white_sounds/rain-and-thunder/rain-and-thunder.mp3)
+- [Rain Low](white_sounds/rain-low/rain-low.mp3)
+- [Rain on Umbrella](white_sounds/rain-on-umbrella/rain-on-umbrella.mp3)
+- [Rain Tent](white_sounds/rain-tent/rain-tent.mp3)
+- [River Stream](white_sounds/river-stream/river-stream.mp3)
+- [Space Engine](white_sounds/space-engine/space-engine.mp3)
+- [Summer Nights](white_sounds/summer-nights/summer-nights.mp3)
+- [Thunderstorm](white_sounds/thunderstorm/thunderstorm.mp3)
+- [Train](white_sounds/train/train.mp3)
+- [Tropical Forest](white_sounds/tropical-forest/tropical-forest.mp3)
+- [Underwater](white_sounds/underwater/underwater.mp3)
+- [Washing Machine](white_sounds/washing-machine/washing-machine.mp3)
+- [Water Stream](white_sounds/water-stream/water-stream.mp3)
+- [Waterfall](white_sounds/waterfall/waterfall.mp3)
+- [Waves](white_sounds/waves/waves.mp3)
+- [Wind](white_sounds/wind/wind.mp3)
+- [Wind Howling](white_sounds/wind-howling/wind-howling.mp3)
