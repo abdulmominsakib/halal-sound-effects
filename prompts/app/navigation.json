@@ -1,0 +1,95 @@
+[
+  {
+    "name": "page_forward",
+    "description": "A soft airy swish moving forward",
+    "use": "Pushing a new screen, next step in a wizard, next onboarding page",
+    "haptic": "none",
+    "prompt": "A soft airy swish of a light breeze passing quickly from left to right, short, smooth, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "page_back",
+    "description": "A soft airy swish moving back",
+    "use": "Back navigation, previous step, dismissing a pushed screen",
+    "haptic": "none",
+    "prompt": "A soft airy swish of a light breeze passing quickly from right to left, slightly lower and softer, short, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "tab_switch",
+    "description": "A pebble rolling one notch on stone",
+    "use": "Switching bottom tabs or segmented controls",
+    "haptic": "selection",
+    "prompt": "One single soft click of a small pebble set onto a flat stone, then complete silence, one hit only, very close, dry, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "single": true,
+    "count": 5
+  },
+  {
+    "name": "modal_open",
+    "description": "A gentle rising breeze",
+    "use": "Opening dialogs, popups, full-screen modals",
+    "haptic": "light",
+    "prompt": "A gentle short breeze swelling softly upward then stopping, airy and light, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "modal_close",
+    "description": "A gentle falling breeze",
+    "use": "Closing dialogs, popups, dismissing modals",
+    "haptic": "light",
+    "prompt": "A short soft breath of breeze closing in and stopping, clear and present, close, airy, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "sheet_up",
+    "description": "Soft cotton cloth sliding up",
+    "use": "Bottom sheets and drawers opening",
+    "haptic": "light",
+    "prompt": "A soft cotton cloth sliding quickly upward over a wooden table, short smooth fabric swish, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "sheet_down",
+    "description": "Soft cotton cloth settling down",
+    "use": "Bottom sheets and drawers closing",
+    "haptic": "light",
+    "prompt": "A soft cotton cloth sliding down and settling on a wooden table, short gentle fabric swish, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "expand",
+    "description": "A large leaf unfurling",
+    "use": "Expanding accordions, show more, opening a details panel",
+    "haptic": "light",
+    "prompt": "A large fresh leaf unfurling and opening, short soft papery rustle, close up, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "collapse",
+    "description": "A leaf folding closed",
+    "use": "Collapsing accordions, show less, closing a details panel",
+    "haptic": "light",
+    "prompt": "A large leaf folding closed quickly, short soft rustle that ends tight, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "menu_open",
+    "description": "A small bird's wings lifting off",
+    "use": "Opening menus, popovers, the side drawer",
+    "haptic": "light",
+    "prompt": "A small bird's wings fluttering briefly as it lifts off a branch, quick soft feather flaps, no chirp, close up, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "name": "send",
+    "description": "A quick airy breeze whoosh moving away",
+    "use": "Message sent, item shared, comment posted",
+    "haptic": "light",
+    "prompt": "A quick soft airy whoosh of a breeze moving away, short swish, light and clean, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "receive",
+    "description": "A soft droplet landing in a basin",
+    "use": "Incoming chat message while the conversation is open",
+    "haptic": "light",
+    "prompt": "A single soft water droplet landing in a small basin, gentle and inviting, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "notification",
+    "description": "A single songbird chirp",
+    "use": "New in-app notification, reminder, badge update",
+    "haptic": "medium",
+    "prompt": "A single short chirp of a small songbird, one call only, clean, close, outdoors at dawn, no background noise, no music",
+    "duration": 0.6,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "mention",
+    "description": "Two quick bright bird chirps",
+    "use": "You were mentioned or replied to, direct message",
+    "haptic": "medium",
+    "prompt": "Two quick bright chirps of a small sparrow, short and clear, close, no background noise, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "reaction",
+    "description": "A tiny water bubble pop",
+    "use": "Like, react, emoji reaction, upvote",
+    "haptic": "light",
+    "prompt": "A single tiny water bubble popping at the surface, quick soft bloop, very short, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "single": true
+  },
+  {
+    "name": "typing",
+    "description": "Light fingertip taps on wood (loop)",
+    "use": "Typing indicator while the other person types, loops while visible",
+    "haptic": "none",
+    "prompt": "Light soft fingertip taps on a smooth wooden table in a gentle irregular rhythm, quiet and continuous, close up, no music",
+    "duration": 2,
+    "influence": 0.6,
+    "loop": true
+  },
+  {
+    "name": "call_incoming",
+    "description": "Calm repeating water drops (loop)",
+    "use": "Incoming voice or video call ringtone, loops until answered",
+    "haptic": "none",
+    "prompt": "A calm steady repeating pattern of gentle water drops falling into a still pool, evenly spaced, soft and clear, natural, no music, no melody, no bells",
+    "duration": 3,
+    "influence": 0.6,
+    "loop": true
+  },
+  {
+    "name": "call_connected",
+    "description": "A soft splash of a stream starting",
+    "use": "Call answered or connected",
+    "haptic": "success",
+    "prompt": "A short clear splash of a small stream bursting into flow over pebbles, bright and present, close up, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "call_end",
+    "description": "A single muted stone tap",
+    "use": "Call ended, left a voice room",
+    "haptic": "medium",
+    "prompt": "A single soft muted tap of a stone on wet earth, short and low, final, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "single": true
+  },
+  {
+    "name": "voice_record_start",
+    "description": "A bubble rising and popping",
+    "use": "Start recording a voice note",
+    "haptic": "medium",
+    "prompt": "A single air bubble rising quickly through water and popping at the surface, short soft gurgle, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "voice_record_stop",
+    "description": "A short soft drip ending",
+    "use": "Stop recording a voice note",
+    "haptic": "light",
+    "prompt": "A short soft water drip ending with a tiny final drop, quiet and clean, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  }
+]

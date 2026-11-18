@@ -1,0 +1,107 @@
+[
+  {
+    "name": "success",
+    "description": "A bright water drop with a short ripple",
+    "use": "Save complete, form submitted, task completed",
+    "haptic": "success",
+    "prompt": "A clear bright water drop into a calm pool followed by a very short gentle ripple, satisfying and positive, close up, natural, no music, no chime",
+    "duration": 0.7,
+    "influence": 0.6,
+    "count": 3
+  },
+  {
+    "name": "error",
+    "description": "A small stone into soft mud, dull thud",
+    "use": "Validation errors, failed requests, wrong input",
+    "haptic": "error",
+    "prompt": "A small stone dropping into thick mud, dull low soft thud, short, muted, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "warning",
+    "description": "A brief soft gust of wind through grass",
+    "use": "Before destructive actions, unsaved changes, low storage",
+    "haptic": "warning",
+    "prompt": "A brief soft gust of wind passing through grass, short and gentle, attention-getting but calm, natural, no music",
+    "duration": 0.7,
+    "influence": 0.6,
+    "count": 3
+  },
+  {
+    "name": "goal_reached",
+    "description": "A water drop with a slow spreading ripple",
+    "use": "Streak or daily goal reached, dhikr count completed",
+    "haptic": "success",
+    "prompt": "A clear water drop into a still pool followed by a slow gentle ripple spreading out, calm and complete, natural, no music, no chime",
+    "duration": 1,
+    "influence": 0.6,
+    "count": 3
+  },
+  {
+    "name": "info",
+    "description": "A neutral water drop in a small cave",
+    "use": "Tooltips, hints, neutral toasts, onboarding tips",
+    "haptic": "light",
+    "prompt": "A single gentle water drop into a small pool, soft clear plip with a short natural tail, close, present, no hiss, no music, no tone",
+    "duration": 0.6,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "denied",
+    "description": "Two quick dull taps on wet wood",
+    "use": "Action not allowed, disabled button pressed, wrong PIN",
+    "haptic": "error",
+    "prompt": "Two quick dull muted knocks on wet wood, short and low, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "achievement",
+    "description": "A joyful splash with falling droplets",
+    "use": "Badges, level up, big milestones, first-time completion",
+    "haptic": "success",
+    "prompt": "A lively splash of water followed by a short light shower of droplets falling back, joyful and celebratory, natural, no music, no chime, no bells",
+    "duration": 1.5,
+    "influence": 0.6
+  },
+  {
+    "name": "unlock",
+    "description": "A stone slab sliding open",
+    "use": "Unlocking a feature, premium unlocked, biometric unlock",
+    "haptic": "success",
+    "prompt": "A small flat stone slid open across another stone, short dry gritty scrape, close up, no resonance, no ringing, no music",
+    "duration": 0.7,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "lock",
+    "description": "A stone lid settling closed",
+    "use": "Locking content, app lock enabled, private mode",
+    "haptic": "medium",
+    "prompt": "A small stone lid set down closed on a stone jar, short soft solid clack, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "copy",
+    "description": "Two crisp paper rustles",
+    "use": "Copied to clipboard, duplicated item",
+    "haptic": "light",
+    "prompt": "Two very quick soft crisp rustles of a sheet of paper, short, close up, dry, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "undo",
+    "description": "A breeze pulled backwards",
+    "use": "Undo, revert, restore from trash",
+    "haptic": "light",
+    "prompt": "A short soft breeze that sounds pulled backwards, quick inward rushing air, close, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  }
+]

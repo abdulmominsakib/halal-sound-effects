@@ -1,0 +1,83 @@
+[
+  {
+    "name": "logo_reveal_water",
+    "description": "A deep drop with a wide ripple",
+    "use": "Logo stings, intro and outro cards, app splash videos",
+    "prompt": "One large water drop falling into a calm lake: a clear deep plunge and splash at the start, then a long gentle ripple fading out, cinematic, close and present, natural, no music, no tone, no chime",
+    "duration": 3,
+    "influence": 0.6,
+    "texture": true,
+    "count": 4,
+    "pick": 3,
+    "note": "Picked by spectrogram review: clear plunge and splash."
+  },
+  {
+    "name": "logo_reveal_wind",
+    "description": "A gust sweeping in, then calm",
+    "use": "Logo stings, intro cards, title reveals",
+    "prompt": "A strong gust of wind sweeping in powerfully and settling into a calm breeze, cinematic logo reveal sound effect, natural, no music, no tone",
+    "duration": 3,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "logo_reveal_sand",
+    "description": "Sand pouring, then scattered by wind",
+    "use": "Logo stings, desert or heritage themed reveals",
+    "prompt": "Fine sand pouring steadily and then scattered by a sudden soft gust of wind, cinematic logo reveal sound effect, natural, no music, no tone",
+    "duration": 3,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "text_appear",
+    "description": "A quick pen stroke on paper",
+    "use": "Words or captions appearing, kinetic typography",
+    "prompt": "A single quick ballpoint pen stroke on paper, short clear scratch, close up, no hum, quiet room, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "calligraphy_write",
+    "description": "A reed qalam writing on paper",
+    "use": "Arabic calligraphy animations, handwriting reveals, signatures",
+    "prompt": "A traditional reed qalam pen writing calligraphy on thick paper, several smooth flowing strokes with soft scratching, close up, quiet room, no music",
+    "duration": 2.5,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "shimmer",
+    "description": "Delicate trickling fine sand",
+    "use": "Highlights, glows, sparkle or shine effects without chimes",
+    "prompt": "Very fine sand trickling lightly onto paper, delicate glittery hiss, soft and airy, close up, no music, no chime, no bells",
+    "duration": 1.2,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "pop_in",
+    "description": "A quick water bubble pop",
+    "use": "Icons, stickers and badges popping into view",
+    "prompt": "A quick round water bubble pop, short and bouncy, close up, no music, no tone",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "pop_out",
+    "description": "A soft suction pop",
+    "use": "Icons, stickers and badges disappearing",
+    "prompt": "A soft quick suction pop of a bubble collapsing inward, short, close up, no music, no tone",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "unveil",
+    "description": "A cloth pulled away",
+    "use": "Product reveals, before/after, unveiling a feature",
+    "prompt": "A large soft cloth pulled away quickly to unveil something, smooth fabric whoosh and flutter, close, no music",
+    "duration": 1,
+    "influence": 0.6
+  }
+]

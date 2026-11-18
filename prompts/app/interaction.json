@@ -1,0 +1,120 @@
+[
+  {
+    "name": "tap",
+    "description": "A single tiny water droplet",
+    "use": "Buttons, list items, tabs, chips, cards",
+    "haptic": "light",
+    "prompt": "A single tiny water droplet falling onto a still water surface, very close microphone, crisp soft plip, extremely short, dry, no reverb, no music, no tone",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3,
+    "single": true
+  },
+  {
+    "name": "toggle_on",
+    "description": "A small pebble dropped into shallow water",
+    "use": "Switches and checkboxes turning on",
+    "haptic": "light",
+    "prompt": "A small smooth pebble dropped into shallow water, short bright plunk with a tiny splash, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "toggle_off",
+    "description": "A pebble lifted out of water",
+    "use": "Switches and checkboxes turning off",
+    "haptic": "light",
+    "prompt": "A small pebble lifted out of shallow water, short soft wet drip and suction, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 3
+  },
+  {
+    "name": "select",
+    "description": "A fingertip tick on a dry leaf",
+    "use": "Selecting an option, radio buttons, picking a list item in multi-select",
+    "haptic": "selection",
+    "prompt": "One single isolated soft tick of a fingertip on a dry leaf, then complete silence, one hit only, very close, dry, no reverb, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "single": true,
+    "count": 5
+  },
+  {
+    "name": "long_press",
+    "description": "A slow press into wet sand",
+    "use": "Long-press menus, press-and-hold to confirm",
+    "haptic": "medium",
+    "prompt": "A palm pressing slowly into wet sand, soft compressing squish, short, close up, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "swipe",
+    "description": "A hand brushing quickly across smooth sand",
+    "use": "Swipe actions on list rows, dismissing cards",
+    "haptic": "light",
+    "prompt": "A hand brushing quickly across smooth dry sand, one short soft swish, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "drag_start",
+    "description": "A pebble lifted from gravel",
+    "use": "Picking up an item to drag or reorder",
+    "haptic": "light",
+    "prompt": "A smooth pebble picked up from fine gravel, small short scrape, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "drop",
+    "description": "A pebble set down on sand",
+    "use": "Dropping a dragged item into place, reorder complete",
+    "haptic": "medium",
+    "prompt": "A smooth pebble set down onto damp sand, one soft muted settle, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "slider_tick",
+    "description": "A grain of sand landing on a leaf",
+    "use": "Slider and picker detents, scroll wheel ticks",
+    "haptic": "selection",
+    "prompt": "One single tiny crisp tick of a dry seed tapped on a hard wooden surface, sharp attack, then complete silence, one hit only, very close, dry, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "single": true,
+    "count": 8
+  },
+  {
+    "name": "keyboard_tap",
+    "description": "A fingertip tap on smooth wood",
+    "use": "Custom in-app keyboards, PIN pads, number pads",
+    "haptic": "light",
+    "prompt": "One single isolated fingertip tap on a smooth wooden desk, then complete silence, one hit only, very close, dry, no reverb, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "single": true,
+    "count": 5
+  },
+  {
+    "name": "pull_release",
+    "description": "A bent reed springing back",
+    "use": "Releasing pull-to-refresh, elastic overscroll release",
+    "haptic": "light",
+    "prompt": "A bent green reed released and springing back, quick soft airy flick, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "scroll_edge",
+    "description": "A muffled bump against wet sand",
+    "use": "Reaching the end of a list or carousel",
+    "haptic": "soft",
+    "prompt": "A soft muffled bump of a fist against wet sand, very short and dull, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "impact_soft",
+    "description": "A sack of sand landing",
+    "use": "Elements landing, soft hits on beat-free edits",
+    "prompt": "A heavy cloth sack of sand dropped onto a wooden floor, clear soft heavy thump with a short body, close and present, no hiss, no music",
+    "duration": 0.7,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "impact_deep",
+    "description": "A large stone dropped on earth",
+    "use": "Title slams, big reveals, dramatic emphasis",
+    "prompt": "A large heavy stone dropped onto packed earth, deep low powerful thud with a short rumble, cinematic impact, natural, no music, no boom synth",
+    "duration": 1.5,
+    "influence": 0.6
+  },
+  {
+    "name": "impact_water",
+    "description": "A big stone splashing into a lake",
+    "use": "Splash transitions, water-themed emphasis",
+    "prompt": "A big stone thrown into a lake with a heavy deep splash and water falling back, cinematic, natural, no music",
+    "duration": 1.5,
+    "influence": 0.6
+  },
+  {
+    "name": "bounce",
+    "description": "A pebble bouncing twice on wood",
+    "use": "Bouncy UI animations, elements settling with a bounce",
+    "prompt": "A small hard pebble bouncing twice on a wooden floor and coming to rest, short light taps, close up, no music",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "thud_wood",
+    "description": "A soft wooden block thud",
+    "use": "Blocks stacking, boxes landing, step-by-step builds",
+    "prompt": "A wooden block set down firmly on a wooden table, single short warm thud, close up, no music, no ringing",
+    "duration": 0.5,
+    "influence": 0.7,
+    "single": true
+  },
+  {
+    "name": "snap",
+    "description": "A crisp branch snap",
+    "use": "Snapping into place, hard cuts, emphasis on a word",
+    "prompt": "A dry branch snapped in half, one crisp sharp crack, close up, natural, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "single": true
+  }
+]

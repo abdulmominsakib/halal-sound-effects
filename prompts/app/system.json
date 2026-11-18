@@ -1,0 +1,102 @@
+[
+  {
+    "name": "app_launch",
+    "description": "A soft breeze swelling and settling",
+    "use": "Splash screen, first launch, app ready",
+    "haptic": "none",
+    "prompt": "A soft breeze swelling gently and ending with a single clear water drop into a pool, calm and welcoming, natural, no music, no chime",
+    "duration": 1.2,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "sign_in",
+    "description": "A wooden door latch opening",
+    "use": "Signed in, account created, welcome back",
+    "haptic": "success",
+    "prompt": "A small wooden door latch lifted and the door opening softly, short gentle creak and click, close up, no music",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "sign_out",
+    "description": "A wooden door closing gently",
+    "use": "Signed out, session ended",
+    "haptic": "medium",
+    "prompt": "A small wooden door closing gently with a soft latch click, short, close up, no music",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "payment_success",
+    "description": "Two coins placed on a wooden table",
+    "use": "Payment complete, sadaqah or zakat donation sent, purchase confirmed",
+    "haptic": "success",
+    "prompt": "Two small metal coins placed softly one after another onto a wooden table, short gentle clink, close up, no music, no ringing",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "timer_end",
+    "description": "Three steady water drops",
+    "use": "Timer or countdown finished, focus session over",
+    "haptic": "warning",
+    "prompt": "Exactly three separate clear water drops falling one after another into a still pool, evenly spaced, close up, natural, no music, no tone, no bells",
+    "duration": 1.2,
+    "influence": 0.7,
+    "count": 5,
+    "pick": 5,
+    "note": "Variation 5 was assembled with ffmpeg from the clean drop in variation 2, repeated three times 0.38 s apart, because no single generation produced three separate drops."
+  },
+  {
+    "name": "alarm_gentle",
+    "description": "A soft dawn chorus slowly rising",
+    "use": "Wake-up alarms, scheduled reminders that need attention",
+    "haptic": "none",
+    "prompt": "A soft dawn chorus of a few songbirds slowly growing louder over a gentle breeze, natural and calm, no music, no voice",
+    "duration": 5,
+    "influence": 0.5,
+    "texture": true
+  },
+  {
+    "name": "connection_lost",
+    "description": "A breeze dying out",
+    "use": "Went offline, connection lost, sync paused",
+    "haptic": "warning",
+    "prompt": "A short gust of breeze quickly dying out into stillness, soft and descending, natural, no music",
+    "duration": 0.8,
+    "influence": 0.7,
+    "texture": true
+  },
+  {
+    "name": "connection_restored",
+    "description": "A small stream starting to flow",
+    "use": "Back online, connection restored, sync resumed",
+    "haptic": "success",
+    "prompt": "A small stream starting to flow again over pebbles, quick soft rise of trickling water, natural, no music",
+    "duration": 0.8,
+    "influence": 0.7,
+    "texture": true
+  },
+  {
+    "name": "low_battery",
+    "description": "Slow water drips running dry",
+    "use": "Low battery, storage almost full, quota almost reached",
+    "haptic": "warning",
+    "prompt": "Three slow water drips from a nearly empty clay jug, each one softer and further apart, running dry, close up, natural, no music, no tone, no hum",
+    "duration": 1.2,
+    "influence": 0.7,
+    "count": 6,
+    "highpass": 300,
+    "note": "High-passed at 300 Hz to remove a steady low drone under the drips."
+  },
+  {
+    "name": "screenshot",
+    "description": "A quick soft paper snap",
+    "use": "Screenshot captured, share card created",
+    "haptic": "light",
+    "prompt": "A quick soft snap of a sheet of paper being flicked taut, crisp and short, close up, dry, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  }
+]

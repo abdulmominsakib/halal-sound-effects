@@ -1,0 +1,56 @@
+[
+  {
+    "name": "riser_wind",
+    "description": "Wind building to a strong gust",
+    "use": "Building anticipation before a reveal or a big moment",
+    "prompt": "Wind building steadily from calm to a strong rushing gust, rising tension, cinematic riser made only from natural wind, no music, no tone, no synth",
+    "duration": 4,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "riser_water",
+    "description": "Rushing water swelling",
+    "use": "Building anticipation, water-themed intros",
+    "prompt": "Rushing water swelling in intensity as if approaching a waterfall, rising tension, cinematic riser made only from natural water, no music, no tone, no synth",
+    "duration": 4,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "riser_sand",
+    "description": "A rising sandstorm hiss",
+    "use": "Building anticipation, desert-themed intros",
+    "prompt": "A sandstorm building up with rising hissing blowing sand and wind, growing tension, cinematic riser made only from natural sounds, no music, no tone, no synth",
+    "duration": 3.5,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "downer_wind",
+    "description": "A strong gust fading to stillness",
+    "use": "After a reveal, endings, calming down after a peak",
+    "prompt": "A strong gust of wind slowly fading down into stillness, releasing tension, cinematic downer made only from natural wind, no music, no tone",
+    "duration": 3,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "breath_in",
+    "description": "A calm deep inhale of air through leaves",
+    "use": "A beat before a reveal, mindfulness and breathing animations",
+    "prompt": "A calm slow swell of soft breeze through leaves that sounds like a deep inhale, gentle rise then stop, natural, no music, no voice",
+    "duration": 2,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "breath_out",
+    "description": "A calm long exhale of breeze",
+    "use": "Relaxing after a peak, breathing exercises, outros",
+    "prompt": "A calm slow soft breeze through leaves fading out like a long exhale, gentle and relaxing, natural, no music, no voice",
+    "duration": 2.5,
+    "influence": 0.6,
+    "texture": true
+  }
+]

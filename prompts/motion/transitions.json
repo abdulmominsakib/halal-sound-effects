@@ -1,0 +1,86 @@
+[
+  {
+    "name": "whoosh_short",
+    "description": "A short fast air whoosh",
+    "use": "Quick cuts, icons flying in, fast UI animations",
+    "prompt": "A short fast whoosh of air passing close by, clean and smooth, cinematic sound effect, natural wind only, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "whoosh_medium",
+    "description": "A medium sweeping air whoosh",
+    "use": "Scene transitions, cards sweeping across, title cards",
+    "prompt": "A medium-length sweeping whoosh of air moving past from left to right, smooth swell and fade, cinematic sound effect, natural wind only, no music",
+    "duration": 1.2,
+    "influence": 0.7
+  },
+  {
+    "name": "whoosh_long",
+    "description": "A long slow wind sweep",
+    "use": "Slow scene changes, opening shots, chapter transitions",
+    "prompt": "A long slow sweep of wind rushing past and fading into calm, smooth and wide, cinematic sound effect, natural, no music",
+    "duration": 2.5,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "swish_fast",
+    "description": "A very fast thin swish",
+    "use": "Text flicks, quick swipes, fast motion blur moments",
+    "prompt": "A very fast thin swish of a reed cutting through the air, crisp and short, close, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "slide_in",
+    "description": "Fabric sliding in",
+    "use": "Panels, lower thirds and captions sliding in",
+    "prompt": "A smooth piece of linen fabric sliding quickly across a table and stopping, soft swish in, close, no music",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "slide_out",
+    "description": "Fabric sliding out",
+    "use": "Panels, lower thirds and captions sliding out",
+    "prompt": "A smooth piece of linen fabric pulled quickly off a table and away, soft swish out fading, close, no music",
+    "duration": 0.7,
+    "influence": 0.7
+  },
+  {
+    "name": "zoom_in",
+    "description": "Wind rushing closer",
+    "use": "Camera push-ins, zooming into a detail",
+    "prompt": "A rush of wind building quickly as if flying closer toward something, short rising air sweep, cinematic, natural, no music, no tone",
+    "duration": 1,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "zoom_out",
+    "description": "Wind pulling away",
+    "use": "Camera pull-backs, zooming out to an overview",
+    "prompt": "A rush of wind quickly pulling back and away into the distance, short falling air sweep, cinematic, natural, no music, no tone",
+    "duration": 1,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "sand_wipe",
+    "description": "A sweep of blowing sand",
+    "use": "Wipe transitions, revealing the next scene",
+    "prompt": "A quick sweep of fine sand blown across a dry surface by a gust of wind, short hissing wipe, natural, no music",
+    "duration": 0.8,
+    "influence": 0.7,
+    "texture": true
+  },
+  {
+    "name": "page_curl",
+    "description": "A large paper page flipping",
+    "use": "Page-curl transitions, storybook and calendar flips",
+    "prompt": "A large sheet of thick paper flipped over quickly, crisp flutter and soft landing, close up, no music",
+    "duration": 0.8,
+    "influence": 0.7
+  }
+]

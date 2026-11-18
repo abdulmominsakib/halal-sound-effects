@@ -1,0 +1,117 @@
+[
+  {
+    "name": "delete",
+    "description": "Water swirling down a stone basin",
+    "use": "Delete, remove, clear, archive",
+    "haptic": "medium",
+    "prompt": "A short swirl of water draining away down a small stone basin, quick soft gurgle, close up, natural, no music",
+    "duration": 0.7,
+    "influence": 0.6,
+    "count": 3
+  },
+  {
+    "name": "refresh",
+    "description": "A short stream trickle over pebbles",
+    "use": "Pull to refresh, sync complete, reload content",
+    "haptic": "light",
+    "prompt": "A short gentle trickle of a small stream over pebbles, soft ripple that fades quickly, natural, no music",
+    "duration": 0.7,
+    "influence": 0.6,
+    "count": 3,
+    "texture": true
+  },
+  {
+    "name": "trash_empty",
+    "description": "Dry leaves swept and crumpled",
+    "use": "Empty trash, clear all, delete many items",
+    "haptic": "heavy",
+    "prompt": "A handful of dry leaves swept together and crumpled away, short crisp crunch, close up, natural, no music",
+    "duration": 0.8,
+    "influence": 0.7
+  },
+  {
+    "name": "save",
+    "description": "A stone placed firmly on stone",
+    "use": "Save, apply changes, settings stored",
+    "haptic": "medium",
+    "prompt": "A smooth river stone placed firmly onto a flat stone surface, one soft solid set, short, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "single": true
+  },
+  {
+    "name": "favorite",
+    "description": "A quick soft wing flap",
+    "use": "Favorite, bookmark an item, add to wishlist",
+    "haptic": "light",
+    "prompt": "A single quick soft flap of a small bird's wing, short feathery whoosh, no chirp, close up, no music",
+    "duration": 0.5,
+    "influence": 0.7
+  },
+  {
+    "name": "share",
+    "description": "A breeze carrying a leaf away",
+    "use": "Opening the share sheet, link shared",
+    "haptic": "light",
+    "prompt": "A quick light breeze lifting a dry leaf and carrying it away, short rustle and swish, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "add",
+    "description": "A pebble dropped into a clay bowl",
+    "use": "Add to list, add to cart, create new item",
+    "haptic": "light",
+    "prompt": "One single soft clunk of a small pebble dropped into a dry clay bowl, then complete silence, one hit only, close up, no ringing, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "count": 5
+  },
+  {
+    "name": "download_complete",
+    "description": "Water filling a small cup",
+    "use": "Download finished, offline content ready",
+    "haptic": "success",
+    "prompt": "Water poured briefly into a small clay cup and settling, short pour that ends cleanly, close up, natural, no music",
+    "duration": 0.8,
+    "influence": 0.7
+  },
+  {
+    "name": "upload_complete",
+    "description": "A bubble rising and releasing",
+    "use": "Upload finished, backup complete, post published",
+    "haptic": "success",
+    "prompt": "A large air bubble rising up through water and releasing at the surface, soft round bloop, close up, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "search",
+    "description": "Leaves being parted",
+    "use": "Opening search, filters applied",
+    "haptic": "light",
+    "prompt": "A hand parting a few leafy branches, short soft rustle, close up, natural, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "camera_shutter",
+    "description": "A quick dry twig snap",
+    "use": "Taking a photo, screenshot, scan captured",
+    "haptic": "medium",
+    "prompt": "A single quick snap of a thin dry twig, crisp and short, close up, dry, no reverb, no music",
+    "duration": 0.5,
+    "influence": 0.8,
+    "single": true
+  },
+  {
+    "name": "loading_loop",
+    "description": "A steady gentle stream (loop)",
+    "use": "Long loading, processing or syncing; loops until done",
+    "haptic": "none",
+    "prompt": "A gentle steady trickle of a small stream over pebbles, continuous and even, soft, natural, no music",
+    "duration": 4,
+    "influence": 0.6,
+    "loop": true
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "name": "page_turn",
+    "description": "A soft paper page turn",
+    "use": "Quran, hadith and book readers, mushaf page swipes",
+    "haptic": "none",
+    "prompt": "A single paper page of a book turned by hand right at the start, clear crisp close-up rustle and soft flap, loud and present, no hiss, quiet room, no music",
+    "duration": 0.6,
+    "influence": 0.7,
+    "count": 5
+  },
+  {
+    "name": "counter_tick",
+    "description": "Two stone tasbih beads clicking",
+    "use": "Tasbih / dhikr counter increment, steppers",
+    "haptic": "light",
+    "prompt": "One single isolated click of two smooth stone prayer beads touching, then complete silence, one hit only, very close, dry, no reverb, no music",
+    "duration": 0.5,
+    "influence": 0.9,
+    "count": 6,
+    "single": true
+  },
+  {
+    "name": "counter_round",
+    "description": "Several tasbih beads sliding together",
+    "use": "Completing a round of 33 in a tasbih counter",
+    "haptic": "success",
+    "prompt": "A few smooth stone prayer beads sliding along a string and settling together, short soft clatter, close up, no music",
+    "duration": 0.8,
+    "influence": 0.7
+  },
+  {
+    "name": "prayer_reminder",
+    "description": "A gentle stream with a breeze through leaves",
+    "use": "Salah time reminders, scheduled local notifications",
+    "haptic": "none",
+    "prompt": "A gentle flowing stream swelling softly with a light breeze through leaves, calm and peaceful, fades in and out, natural, no music, no voice",
+    "duration": 2.5,
+    "influence": 0.5,
+    "count": 3,
+    "texture": true
+  },
+  {
+    "name": "quran_open",
+    "description": "A book cover gently opened",
+    "use": "Opening the mushaf or a book, starting a reading session",
+    "haptic": "light",
+    "prompt": "A heavy hardcover book being opened gently, soft creak of the spine and a light paper flutter, close up, quiet room, no music",
+    "duration": 0.8,
+    "influence": 0.7
+  },
+  {
+    "name": "quran_close",
+    "description": "A book gently closed",
+    "use": "Closing the mushaf or a book, ending a reading session",
+    "haptic": "medium",
+    "prompt": "A hardcover book closed gently, soft muffled paper thump, close up, quiet room, no music",
+    "duration": 0.6,
+    "influence": 0.7
+  },
+  {
+    "name": "bookmark",
+    "description": "A cloth ribbon laid between pages",
+    "use": "Bookmarking an ayah, page or hadith",
+    "haptic": "light",
+    "prompt": "A satin cloth ribbon pulled firmly across a paper page and laid in a book, clear soft swish, close and present, quiet room, no music",
+    "duration": 0.5,
+    "influence": 0.7,
+    "count": 4
+  },
+  {
+    "name": "prayer_mat",
+    "description": "A prayer rug unrolled",
+    "use": "Starting a prayer, prayer mode on, marking a prayer as prayed",
+    "haptic": "medium",
+    "prompt": "A soft woven fabric prayer rug being unrolled and laid flat on a carpet, gentle fabric rustle and soft thump, close up, quiet room, no music",
+    "duration": 1.2,
+    "influence": 0.6
+  },
+  {
+    "name": "qibla_found",
+    "description": "A clear drop into a deep well",
+    "use": "Compass aligned with the qibla",
+    "haptic": "success",
+    "prompt": "A single clear water drop falling into a deep stone well, soft natural echo, calm and resolved, no music, no tone",
+    "duration": 1,
+    "influence": 0.6
+  },
+  {
+    "name": "dua_complete",
+    "description": "A long soft breeze through palm leaves",
+    "use": "Finishing a dua, adhkar or reading session",
+    "haptic": "none",
+    "prompt": "A warm soft breeze rustling through palm fronds, clear leafy rustle that settles into calm, close and present, peaceful, natural, no music, no voice",
+    "duration": 2,
+    "influence": 0.6,
+    "texture": true,
+    "count": 4
+  },
+  {
+    "name": "wudu_reminder",
+    "description": "Water flowing into a basin",
+    "use": "Wudu reminders, ablution guide steps",
+    "haptic": "none",
+    "prompt": "Clean water flowing gently from a tap into a stone basin, calm and clear, short, close up, natural, no music",
+    "duration": 1.5,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "iftar",
+    "description": "Water poured into a clay cup",
+    "use": "Iftar time, fast completed, Ramadan countdown finished",
+    "haptic": "success",
+    "prompt": "Cool water poured into a clay cup with a few dates placed softly into a ceramic dish, calm and warm, close up, no music, no voice",
+    "duration": 1.5,
+    "influence": 0.6,
+    "texture": true
+  },
+  {
+    "name": "suhoor_alarm",
+    "description": "Early birds waking by a stream",
+    "use": "Suhoor and tahajjud alarms, gentle wake-up",
+    "haptic": "none",
+    "prompt": "Early morning before dawn, a few soft bird calls waking up beside a gentle stream, calm and slowly brightening, natural, no music, no voice",
+    "duration": 4,
+    "influence": 0.5,
+    "texture": true
+  }
+]
