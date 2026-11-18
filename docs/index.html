@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halal Sound Effects: free non-musical UI sounds for apps and video</title>
+<meta name="description" content="110 free, non-musical sound effects for apps, games and motion graphics, made only from water, stone, wood, wind, sand, birds and paper. No instruments, chimes or bells. MIT licensed, served from a CDN.">
+<meta name="keywords" content="halal sound effects, islamic sound effects, muslim app sounds, ui sound effects, no music sound effects, free sound effects, app sounds, notification sounds, tasbih sound, quran page turn sound, motion graphics sound effects, whoosh, nature sounds">
+<link rel="canonical" href="https://abdulmominsakib.github.io/halal-sound-effects/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Halal Sound Effects">
+<meta property="og:description" content="110 free, non-musical UI and motion sound effects from nature. No instruments, chimes or bells.">
+<meta property="og:url" content="https://abdulmominsakib.github.io/halal-sound-effects/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f6f5c">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"Halal Sound Effects","description":"110 free, non-musical sound effects for apps, games and motion graphics, made only from natural sources.","url":"https://abdulmominsakib.github.io/halal-sound-effects/","license":"https://opensource.org/licenses/MIT","keywords":["halal","sound effects","UI sounds","islamic","no music","motion graphics"],"distribution":{"@type":"DataDownload","encodingFormat":"audio/mpeg","contentUrl":"https://github.com/abdulmominsakib/halal-sound-effects"}}
+</script>
+<style>
+  :root {
+    --bg: #f7f5ef; --card: #ffffff; --text: #1d2420; --muted: #5d6762; --line: #e3dfd3;
+    --accent: #1f6f5c; --accent-soft: #e2f0eb; --chip: #efece3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121614; --card: #1b201d; --text: #e9ede9; --muted: #9aa59f; --line: #2b322e;
+      --accent: #5cc4a6; --accent-soft: #1d3029; --chip: #232a26; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 48px 0 24px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); margin: 0 0 8px; letter-spacing: -0.02em; }
+  .lead { color: var(--muted); max-width: 680px; margin: 0 0 20px; font-size: 16px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--card); color: var(--text); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .btn.primary { color: #0d1512; } }
+  .bar { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .bar .wrap { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  input[type=search] { flex: 1 1 220px; min-width: 0; padding: 9px 12px; border-radius: 10px; border: 1px solid var(--line);
+    background: var(--card); color: var(--text); font: inherit; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--chip); color: var(--text);
+    font: inherit; font-size: 13px; cursor: pointer; }
+  .chip[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .chip[aria-pressed=true] { color: #0d1512; } }
+  section { margin: 28px 0; }
+  h2 { font-size: 18px; margin: 0 0 4px; }
+  .desc { color: var(--muted); margin: 0 0 12px; font-size: 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .card { display: flex; gap: 10px; align-items: flex-start; padding: 12px; border-radius: 12px; background: var(--card);
+    border: 1px solid var(--line); }
+  .play { flex: none; width: 40px; height: 40px; border-radius: 50%; border: none; background: var(--accent-soft); color: var(--accent);
+    cursor: pointer; display: grid; place-items: center; }
+  .play.on { background: var(--accent); color: #fff; }
+  .play svg { width: 16px; height: 16px; }
+  .meta { min-width: 0; flex: 1; }
+  .name { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 600; font-size: 13.5px; word-break: break-all; }
+  .what { font-size: 13.5px; }
+  .use { color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .row { display: flex; gap: 10px; margin-top: 6px; font-size: 12px; color: var(--muted); align-items: center; flex-wrap: wrap; }
+  .row a, .row button { color: var(--accent); background: none; border: none; padding: 0; font: inherit; cursor: pointer; text-decoration: none; }
+  .tag { padding: 1px 6px; border-radius: 6px; background: var(--chip); }
+  .empty { color: var(--muted); padding: 24px 0; }
+  footer { color: var(--muted); font-size: 13px; padding: 32px 0 48px; border-top: 1px solid var(--line); margin-top: 40px; }
+  footer a { color: var(--accent); }
+  .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--text); color: var(--bg);
+    padding: 8px 14px; border-radius: 8px; font-size: 13px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>🌿 Halal Sound Effects</h1>
+  <p class="lead">110 free, non-musical sound effects for apps, games and motion graphics, made only from water, stone, wood, wind, sand, birds and paper. No instruments, melodies, chimes or bells. MIT licensed.</p>
+  <div class="links">
+    <a class="btn primary" href="https://github.com/abdulmominsakib/halal-sound-effects">★ GitHub</a>
+    <a class="btn" href="https://github.com/abdulmominsakib/halal-sound-effects/archive/refs/heads/main.zip">Download all (.zip)</a>
+    <a class="btn" href="https://github.com/abdulmominsakib/halal-sound-effects/blob/main/sounds.json">sounds.json</a>
+    <a class="btn" href="https://github.com/abdulmominsakib/halal-sound-effects#-add-it-with-an-ai-coding-agent">AI agent skill</a>
+  </div>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <input type="search" id="q" placeholder="Search: tap, error, quran, whoosh…" aria-label="Search sounds">
+    <div class="chips" id="groups"></div>
+  </div>
+</div>
+
+<main class="wrap" id="list"><p class="empty">Loading sounds…</p></main>
+
+<footer class="wrap">
+  Every file is served by jsDelivr: <code>https://cdn.jsdelivr.net/gh/abdulmominsakib/halal-sound-effects@main/&lt;file&gt;</code>.
+  Sounds generated with ElevenLabs and reviewed for musical tones, hum and noise
+  (<a href="https://github.com/abdulmominsakib/halal-sound-effects/blob/main/REVIEW.md">review report</a>).
+  The classic collection and white-noise loops are listed in the <a href="https://github.com/abdulmominsakib/halal-sound-effects#-classic-collection">README</a>.
+</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const BASE = 'https://cdn.jsdelivr.net/gh/abdulmominsakib/halal-sound-effects@main/';
+const RAW = 'https://raw.githubusercontent.com/abdulmominsakib/halal-sound-effects/main/';
+const PLAY = '<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l9-5.5z"/></svg>';
+const STOP = '<svg viewBox="0 0 16 16" fill="currentColor"><rect x="3.5" y="3.5" width="9" height="9" rx="1"/></svg>';
+let data, group = 'all', current = null;
+
+const el = (tag, attrs = {}, html = '') => Object.assign(document.createElement(tag), attrs, html ? { innerHTML: html } : {});
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 1400);
+}
+function stop() {
+  if (!current) return;
+  current.audio.pause(); current.btn.classList.remove('on'); current.btn.innerHTML = PLAY;
+  current.btn.setAttribute('aria-label', 'Play ' + current.name); current = null;
+}
+function play(name, s, btn) {
+  const same = current && current.name === name;
+  stop();
+  if (same) return;
+  const audio = new Audio(BASE + s.file);
+  audio.loop = !!s.loop;
+  audio.onended = stop;
+  audio.play().catch(() => { audio.src = RAW + s.file; audio.play(); });
+  btn.classList.add('on'); btn.innerHTML = STOP; btn.setAttribute('aria-label', 'Stop ' + name);
+  current = { name, audio, btn };
+}
+
+function render() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const list = document.getElementById('list');
+  list.innerHTML = '';
+  let shown = 0;
+  for (const [key, cat] of Object.entries(data.categories)) {
+    if (group !== 'all' && !key.startsWith(group + '/')) continue;
+    const names = cat.sounds.filter((n) => {
+      const s = data.sounds[n];
+      return !q || [n, s.description, s.use, key].join(' ').toLowerCase().includes(q);
+    });
+    if (!names.length) continue;
+    const sec = el('section');
+    sec.append(el('h2', { textContent: `${cat.title} · ${key}/` }), el('p', { className: 'desc', textContent: cat.description }));
+    const grid = el('div', { className: 'grid' });
+    for (const n of names) {
+      const s = data.sounds[n];
+      const card = el('div', { className: 'card' });
+      const btn = el('button', { className: 'play', type: 'button' }, PLAY);
+      btn.setAttribute('aria-label', 'Play ' + n);
+      btn.onclick = () => play(n, s, btn);
+      const meta = el('div', { className: 'meta' });
+      meta.append(el('div', { className: 'name', textContent: n }), el('div', { className: 'what', textContent: s.description }),
+        el('div', { className: 'use', textContent: s.use }));
+      const row = el('div', { className: 'row' });
+      row.append(el('span', { className: 'tag', textContent: s.duration + 's' }));
+      if (s.loop) row.append(el('span', { className: 'tag', textContent: 'loop' }));
+      const copy = el('button', { type: 'button', textContent: 'Copy URL' });
+      copy.onclick = () => navigator.clipboard.writeText(s.url).then(() => toast('Copied ' + n + ' URL'), () => toast(s.url));
+      row.append(copy, el('a', { href: s.url, download: n + '.mp3', textContent: 'Download' }));
+      meta.append(row);
+      card.append(btn, meta);
+      grid.append(card);
+      shown++;
+    }
+    sec.append(grid);
+    list.append(sec);
+  }
+  if (!shown) list.append(el('p', { className: 'empty', textContent: 'No sounds match that search.' }));
+}
+
+function chips() {
+  const box = document.getElementById('groups');
+  const total = Object.keys(data.sounds).length;
+  const count = (g) => Object.values(data.sounds).filter((s) => s.category.startsWith(g + '/')).length;
+  for (const [g, label] of [['all', `All ${total}`], ['app', `App ${count('app')}`], ['motion', `Motion & video ${count('motion')}`]]) {
+    const b = el('button', { className: 'chip', type: 'button', textContent: label });
+    b.setAttribute('aria-pressed', g === group);
+    b.onclick = () => { group = g; box.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', c === b)); render(); };
+    box.append(b);
+  }
+}
+
+(async () => {
+  for (const src of [BASE + 'sounds.json', RAW + 'sounds.json']) {
+    try { const r = await fetch(src); if (r.ok) { data = await r.json(); break; } } catch {}
+  }
+  if (!data) { document.getElementById('list').innerHTML = '<p class="empty">Could not load sounds.json. Try the GitHub repo instead.</p>'; return; }
+  chips();
+  render();
+  document.getElementById('q').addEventListener('input', render);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') stop(); });
+})();
+</script>
+</body>
+</html>

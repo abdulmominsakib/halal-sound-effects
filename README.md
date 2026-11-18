@@ -1,23 +1,119 @@
-# 🎵 Halal Sound Effects Collection
+<div align="center">
 
-**Assalamu alaikum wa rahmatullahi wa barakatuh** 🌙
+# 🌿 Halal Sound Effects
 
-A curated collection of natural, organic sound effects designed for mobile apps and web applications. All sounds are carefully crafted to be gentle, calming, and culturally appropriate - reflecting the beauty and tranquility found in nature, as mentioned in the Quran: *"And in the earth are signs for those who are certain [in faith]"* (51:20).
+**Free, non-musical UI sound effects for apps, games and motion graphics.**<br>
+110 action-mapped sounds made only from nature (water, stone, wood, wind, sand, birds and paper), with no instruments, melodies, chimes or bells.
 
-## 🎯 Why Natural Sounds?
+[![License: MIT](https://img.shields.io/badge/license-MIT-2ea44f)](LICENSE)
+[![Sounds](https://img.shields.io/badge/sounds-110%20%2B%20classic%20set-0a7ea4)](#-sound-catalog)
+[![Format](https://img.shields.io/badge/format-MP3%20·%2044.1kHz-6e56cf)](#-technical-specifications)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/gh/abdulmominsakib/halal-sound-effects/badge)](https://www.jsdelivr.com/package/gh/abdulmominsakib/halal-sound-effects)
+[![Agent skill](https://img.shields.io/badge/agent%20skill-Claude%20Code-d97757)](#-add-it-with-an-ai-coding-agent)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](#-contributing)
 
-In accordance with Islamic principles, this collection focuses exclusively on natural, non-musical sounds. Musical instruments and melodic compositions are avoided as they may not align with certain Islamic interpretations. Instead, we embrace the beautiful sounds of nature - the gentle tap of wood, the soft rustle of leaves, the calming flow of water - which are universally appreciated and culturally respectful.
+**[▶ Listen to every sound](https://abdulmominsakib.github.io/halal-sound-effects/)** · [Quick start](#-quick-start) · [Catalog](#-sound-catalog) · [Motion & video](#-motion-graphics--video) · [Agent skill](#-add-it-with-an-ai-coding-agent) · [sounds.json](sounds.json)
+
+</div>
+
+---
+
+**Assalamu alaikum** 🌙 This is a sound library for developers and designers who want their apps to feel alive without music. Every interaction a typical app has (taps, toggles, success, errors, navigation, chat, uploads, alarms) has a sound here. So do Muslim-app moments: Quran page turns, tasbih counters, qibla found, prayer, wudu, iftar and suhoor reminders. All of them are free under the MIT license and served from a CDN.
+
+> *"And in the earth are signs for those who are certain [in faith]."* (Quran 51:20)
+
+## Contents
+
+- [Why natural sounds?](#-why-natural-sounds)
+- [Features](#-features)
+- [Quick start](#-quick-start)
+- [Folder layout](#-folder-layout)
+- [Sound catalog](#-sound-catalog)
+- [Motion graphics & video](#-motion-graphics--video)
+- [Add it with an AI coding agent](#-add-it-with-an-ai-coding-agent)
+- [Playback best practices](#-playback-best-practices)
+- [How the sounds are made](#%EF%B8%8F-how-the-sounds-are-made)
+- [Classic collection](#-classic-collection)
+- [White noise & ambience](#-white-noise--ambience)
+- [Technical specifications](#-technical-specifications)
+- [Contributing](#-contributing)
+
+## 🎯 Why natural sounds?
+
+Many Muslims avoid musical instruments and melodies, and most UI sound kits are built from exactly those: chimes, marimbas, synth blips and jingles. This collection is built only from natural, non-musical sources (the tap of wood, a drop of water, a gust of wind, a page turning). Those sounds are respectful, calm and pleasant for any audience, Muslim or not.
 
 ## 🌟 Features
 
-- **110 action-mapped sounds**: 79 app sounds and 31 motion graphics / video sounds, each named after the action it's for
-- **Natural & non-musical**: water, stone, wood, wind, sand, birds, paper and cloth. No instruments, melodies, chimes or bells
-- **Reviewed**: every sound was generated in 2–8 variations and checked for hidden tones, hum, noise and timing (see [REVIEW.md](REVIEW.md))
-- **App-ready**: leveled to a −3 dB peak, trimmed, mono 44.1 kHz MP3, most UI sounds under 0.5s
-- **Machine-readable**: [`sounds.json`](sounds.json) maps every sound to its file, where to use it, length, haptic and CDN link
-- **Agent skill**: drop the [skill](skills/halal-sound-effects/SKILL.md) into Claude Code and ask it to add sounds to your app
+- **110 action-mapped sounds:** 79 app sounds and 31 motion graphics / video sounds, each named after the action it's for (`tap`, `success`, `modal_open`, `counter_tick`, `riser_wind`…)
+- **No music, by design:** no instruments, melodies, tuned chimes, bells or synths. Each sound was checked for hidden musical tones.
+- **Reviewed, not just generated:** each sound was made in 2–8 variations, and the best was picked after checks for tones, hum, noise, extra hits and lag ([REVIEW.md](REVIEW.md))
+- **App-ready:** leveled to a −3 dB peak, trimmed so taps start instantly, mono 44.1 kHz MP3, about 1.8 MB for all 110
+- **Machine-readable:** [`sounds.json`](sounds.json) lists every sound's file, use, length, loop flag, suggested haptic and CDN link
+- **Free CDN:** every file is served by jsDelivr, so you can hot-link or download it
+- **Works everywhere:** Flutter, React Native / Expo, Swift / Kotlin, web, Unity, game engines and video editors
+- **AI agent skill:** install the skill and ask Claude Code to add sounds to your app
 
-## 📂 Layout
+## 🚀 Quick start
+
+**1. Pick sounds** in the [catalog](#-sound-catalog), or [listen to them all](https://abdulmominsakib.github.io/halal-sound-effects/).
+
+**2. Download them into your project:**
+
+```bash
+for s in tap success error toggle_on; do
+  curl -sL --create-dirs -o "assets/sounds/$s.mp3" \
+    "$(curl -sL https://cdn.jsdelivr.net/gh/abdulmominsakib/halal-sound-effects@main/sounds.json | jq -r ".sounds.$s.url")"
+done
+```
+
+Or clone everything:
+
+```bash
+git clone --depth 1 https://github.com/abdulmominsakib/halal-sound-effects.git
+```
+
+**3. Play them.**
+
+<details>
+<summary><b>Web</b> (Web Audio API)</summary>
+
+```js
+const ctx = new AudioContext();
+const cache = {};
+async function play(name) {
+  if (ctx.state === 'suspended') await ctx.resume();
+  cache[name] ??= fetch(`/sounds/${name}.mp3`).then((r) => r.arrayBuffer()).then((b) => ctx.decodeAudioData(b));
+  const src = ctx.createBufferSource();
+  src.buffer = await cache[name];
+  src.connect(ctx.destination);
+  src.start();
+}
+button.addEventListener('click', () => play('tap'));
+```
+</details>
+
+<details>
+<summary><b>Flutter</b> (audioplayers)</summary>
+
+```dart
+final pool = await AudioPool.createFromAsset(path: 'sounds/tap.mp3', maxPlayers: 3);
+ElevatedButton(onPressed: () { pool.start(volume: 0.6); /* ... */ }, child: const Text('Save'));
+```
+</details>
+
+<details>
+<summary><b>React Native / Expo</b> (expo-audio)</summary>
+
+```ts
+import { useAudioPlayer } from 'expo-audio';
+const tap = useAudioPlayer(require('./assets/sounds/tap.mp3'));
+<Pressable onPress={() => { tap.seekTo(0); tap.play(); }} />
+```
+</details>
+
+The [agent skill](skills/halal-sound-effects/SKILL.md) has full sound-service examples for Flutter, Expo and the web, plus notification-sound setup for iOS and Android.
+
+## 📂 Folder layout
 
 ```
 app/
@@ -35,17 +131,15 @@ motion/
 └── risers/        wind, water & sand risers, downers, breaths
 ```
 
-The original collection (`tap_click/`, `success_confirmation/`, `error_alert/`, `notification/`, `transition_loading/`, `white_sounds/`) is unchanged further down.
-
 ## 🔊 Sound catalog
 
-Every sound loads straight from the CDN:
+Click a name to open the file, or [listen to everything on one page](https://abdulmominsakib.github.io/halal-sound-effects/). Every file is also on the CDN:
 
 ```
 https://cdn.jsdelivr.net/gh/abdulmominsakib/halal-sound-effects@main/<folder>/<sound>.mp3
 ```
 
-Sounds marked **loop** are made to repeat seamlessly (typing indicator, ringtone, loading). Motion sounds keep their full low end for video; app sounds are high-passed at 120 Hz for phone speakers.
+Sounds marked **loop** repeat seamlessly (typing indicator, ringtone, loading). App sounds are high-passed at 120 Hz for phone speakers; motion sounds keep their full low end for video.
 
 <!-- catalog:start -->
 ### 📱 App sounds (79)
@@ -241,21 +335,24 @@ For motion graphics and video: natural wind, water and sand risers, downers and 
 
 <!-- catalog:end -->
 
-## 🎬 Using the motion sounds
+## 🎬 Motion graphics & video
 
-The `motion/` sounds are for motion graphics, app promo videos, onboarding animations, Lottie / Rive animations and social clips. They work in any editor (After Effects, Premiere, DaVinci Resolve, CapCut, Final Cut).
+The `motion/` sounds are for motion graphics, app promo videos, onboarding animations, Lottie / Rive animations, presentations and social clips. Use them in After Effects, Premiere Pro, DaVinci Resolve, Final Cut, CapCut or any other editor.
 
-- **Line them up on the visual:** a whoosh peaks in its middle, so start it a little before the motion. Impacts and pops hit on their first frame.
-- **Build a reveal:** a riser leads into an impact or a logo sting, then a downer or `breath_out` lets the moment settle.
-- **Keep it halal:** don't put music beds under them. For atmosphere, use the [White Noise & Ambience](#-white-noise--ambience) loops instead.
-- **In-app animations:** the same files work for Lottie or Rive animations inside an app. Play them from code at the animation's marker, the same way as the app sounds.
+- **Line them up on the visual:** a whoosh peaks in its middle, so start it a little before the motion. Impacts, pops and snaps hit on their first frame.
+- **Build a reveal:** a riser leads into an impact or a logo sting, and then a downer or `breath_out` lets the moment settle.
+- **Islamic content:** `calligraphy_write` (a reed qalam on paper) suits Arabic calligraphy animations. `page_curl` and `page_turn` suit Quran and book content.
+- **Keep it halal:** don't put a music bed under them. For atmosphere, use the [white noise & ambience](#-white-noise--ambience) loops at a low volume.
+- **In-app animations:** the same files work for Lottie or Rive animations inside an app. Play them from code at the animation's marker.
 
-## 🤖 Use it in your app with an AI coding agent
+## 🤖 Add it with an AI coding agent
 
-This repo ships an agent skill, [`skills/halal-sound-effects/SKILL.md`](skills/halal-sound-effects/SKILL.md). It teaches Claude Code (or any agent that reads skills) to:
-- map your app's real actions to these sounds;
-- bundle only the files it needs;
-- wire up one sound service for Flutter, React Native / Expo, native iOS / Android or web, with a user setting to turn sounds off.
+This repo ships an agent skill, [`skills/halal-sound-effects/SKILL.md`](skills/halal-sound-effects/SKILL.md), for Claude Code and other agents that read skills. With it installed, the agent will:
+- read your app and map its real actions to sounds, showing you the map before changing anything;
+- download only the sounds you need into your assets;
+- build one sound service for Flutter, React Native / Expo, native iOS / Android or web;
+- add a setting to turn sounds off;
+- set up looping sounds, and notification sounds for prayer and suhoor alarms.
 
 Install it with the [skills CLI](https://github.com/vercel-labs/skills):
 
@@ -263,7 +360,7 @@ Install it with the [skills CLI](https://github.com/vercel-labs/skills):
 npx skills add abdulmominsakib/halal-sound-effects
 ```
 
-Or copy it straight into Claude Code's skills folder:
+Or copy it into Claude Code's skills folder:
 
 ```bash
 curl -sL --create-dirs -o ~/.claude/skills/halal-sound-effects/SKILL.md https://raw.githubusercontent.com/abdulmominsakib/halal-sound-effects/main/skills/halal-sound-effects/SKILL.md
@@ -271,9 +368,17 @@ curl -sL --create-dirs -o ~/.claude/skills/halal-sound-effects/SKILL.md https://
 
 Then ask: *"Add halal sound effects to this app."*
 
+## 🎧 Playback best practices
+
+- **Preload and bundle.** Ship sounds with the app instead of streaming them, so they play instantly and offline.
+- **Don't interrupt other audio.** Mix with it, so a user's Quran recitation or podcast keeps playing. On iOS use the `ambient` audio session; on Android don't take audio focus for UI sounds.
+- **Respect the user.** Follow the silent switch and Do Not Disturb, add an in-app on/off setting, and play at a modest volume (0.5–0.7).
+- **Less is more.** No sound on scrolling, every keystroke or screen load. Save sounds for meaningful moments.
+- **Pair with haptics.** Each sound in `sounds.json` has a suggested haptic (`light`, `selection`, `success`…).
+
 ## 🛠️ How the sounds are made
 
-Every sound in `app/` and `motion/` was generated with the ElevenLabs Sound Effects API from the prompts in [`prompts/`](prompts/). Each prompt names a natural source and says "no music".
+Every sound in `app/` and `motion/` was generated with the ElevenLabs Sound Effects API from the prompts in [`prompts/`](prompts/). Each prompt names a natural source and says "no music". The pipeline then reviewed and picked the best version of each sound.
 
 1. Put `ELEVENLABS_API_KEY=...` in `.env`. The key needs **Sound Effects** access.
 2. Generate. Clips that already exist are skipped, so reruns only fill gaps:
@@ -281,18 +386,17 @@ Every sound in `app/` and `motion/` was generated with the ElevenLabs Sound Effe
    node scripts/generate.mjs
    ```
    Pass a folder or file (`prompts/motion`) to limit it. Add `--only name1,name2 --force` to redo specific sounds.
-3. Review and publish. This picks the best variation of each sound, writes it into `app/` and `motion/`, and updates `sounds.json`, `REVIEW.md` and the catalog above:
+3. Review and publish. This picks the best variation of each sound, writes it into `app/` and `motion/`, and updates `sounds.json`, `REVIEW.md` and the catalog in this README:
    ```bash
    node scripts/build.mjs
    ```
    Use `--dry-run` to see the review without changing anything.
 
-To add a sound, add an entry to the right `prompts/<group>/<category>.json` file (`name`, `description`, `use`, `prompt`, `duration`), then run both steps. `.env` and `generated/` are git-ignored. The build needs ffmpeg.
+To add a sound, add an entry to the right `prompts/<group>/<category>.json` file (`name`, `description`, `use`, `prompt`, `duration`), then run both steps. `.env` and `generated/` are git-ignored. The build needs Node 18+ and ffmpeg.
 
 ## 📁 Classic collection
 
-
-The original hand-picked set, organized into five categories:
+The original hand-picked set of 28 short sounds, kept as it was. Some of them, such as `stone_chime` and the glass clinks, have a ringing tone. If you want to avoid all tonal sounds, use the `app/` set instead.
 
 ### 🖱️ Tap & Click Sounds
 Gentle interaction feedback for buttons, links, and app elements.
@@ -357,11 +461,8 @@ transition_loading/
 └── swipe_effect.mp3
 ```
 
-
-
-## 📥 Direct Downloads
-
-Download individual sound effects directly by clicking the links below:
+<details>
+<summary><b>Direct download links for the classic collection</b></summary>
 
 ### 🖱️ Tap & Click Sounds
 - [light_wooden_knock.mp3](tap_click/light_wooden_knock.mp3) - Gentle wooden knock sound
@@ -401,133 +502,11 @@ Download individual sound effects directly by clicking the links below:
 - [upward_swoosh.mp3](transition_loading/upward_swoosh.mp3) - Upward swoosh effect
 - [swipe_effect.mp3](transition_loading/swipe_effect.mp3) - Swipe transition effect
 
+</details>
 
+## 🌊 White noise & ambience
 
-## 🚀 Usage
-
-These sound effects are designed to enhance user experience in mobile apps and web applications. Simply integrate the audio files into your project's assets and play them at appropriate moments to provide gentle, natural feedback to user interactions.
-
-### Common Use Cases
-
-- **Button Taps**: Provide tactile feedback for button presses
-- **Success Actions**: Confirm successful operations with gentle sounds
-- **Error Notifications**: Alert users to issues with subtle sounds
-- **Page Transitions**: Smooth navigation between screens
-- **Loading States**: Indicate background processes
-- **Form Submissions**: Confirm data entry completion
-
-## 📱 Integration Guide
-
-### 1. Add to Your Project
-Copy the desired sound category folders to your project's assets directory.
-
-### 2. Implementation
-- For mobile apps: Add sounds to your app's asset bundle
-- For web apps: Include sounds in your public assets folder
-- Use your preferred audio library to play the sounds
-
-### 3. Best Practices
-- Create a centralized sound service for consistent playback
-- Allow users to enable/disable sound effects
-- Provide volume controls for accessibility
-- Test sounds in various environments and devices
-
-## 🎨 Design Philosophy
-
-These sound effects are designed with the following principles:
-
-- **Minimalism**: Short, focused sounds that don't distract from the user experience
-- **Naturalism**: Organic materials and natural processes as sound sources
-- **Accessibility**: Gentle sounds suitable for various environments and sensitivities
-- **Consistency**: Uniform audio levels and quality across all effects
-- **Cultural Sensitivity**: Respectful and appropriate for diverse user bases
-- **Islamic Values**: Aligned with principles of modesty and natural beauty
-
-## 📊 Technical Specifications
-
-**`app/` and `motion/`** (generated and reviewed)
-- **Format**: MP3, 128 kbps, mono, 44.1 kHz
-- **Level**: −3 dBFS peak; app sounds high-passed at 120 Hz
-- **Duration**: most UI sounds 0.1–0.6s; reminders, alarms, loops and motion sounds 1–5s
-- **Total**: 110 sounds (79 app, 31 motion), about 1.8 MB
-
-**Classic collection**
-- **Format**: MP3, 44.1 kHz, 16-bit
-- **Duration**: 0.2s – 0.7s
-- **Total**: 28 sound effects, plus the white noise and ambience loops
-
-## 🤝 Contributing
-
-We warmly welcome contributions from the community to enhance this collection of halal sound effects! 🌟
-
-The Prophet Muhammad ﷺ said: *"The best of people are those who are most beneficial to people."* Let's work together to create beautiful, accessible sound experiences for everyone.
-
-### 🌱 How to Contribute
-
-We believe in the power of community collaboration. Here's how you can help:
-
-1. **Fork** the repository ⭐
-2. **Create** a feature branch (`git checkout -b feature/amazing-sound`)
-3. **Add** your sound effects to the appropriate category
-4. **Ensure** your sounds follow our design philosophy
-5. **Test** the sounds in a real application context
-6. **Commit** your changes (`git commit -m 'Add amazing sound effect'`)
-7. **Push** to the branch (`git push origin feature/amazing-sound`)
-8. **Open** a Pull Request with a detailed description
-
-### 🎵 Sound Submission Guidelines
-
-- Keep UI sounds short (under 0.7s) and start them right on the sound, with no lead-in
-- No instruments, melodies, chimes or bells
-- Use natural, organic sound sources (wood, stone, water, etc.)
-- Maintain consistent audio levels and quality
-- Provide descriptive, meaningful filenames
-- Include source material information when possible
-
-### 💝 What We're Looking For
-
-- **Natural Sounds**: Wood, stone, water, wind, leaves, etc.
-- **Gentle Interactions**: Soft taps, gentle whooshes, subtle chimes
-- **Cultural Sensitivity**: Respectful and appropriate for diverse audiences
-- **High Quality**: Professional-grade audio with consistent levels
-- **Accessibility**: Sounds that work well in various environments
-
-**Your contribution, no matter how small, makes a difference!** 🕌
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Alhamdulillah** - All praise is due to Allah for the beauty of natural sounds
-- Inspired by natural sound design principles and Islamic values of harmony
-- Created for inclusive and accessible user experiences
-- Special thanks to the open-source community and contributors
-
-
-## 🌟 Community
-
-We believe in the power of collaboration and sharing knowledge. Whether you're a developer, designer, or sound enthusiast, your contributions help create better experiences for everyone.
-
-**"Whoever guides someone to goodness will have a reward like the one who did it."** - Prophet Muhammad ﷺ
-
-### 📞 Support
-
-If you have questions or need help integrating these sound effects:
-
-- Open an [issue](../../issues) on GitHub
-- Check the [documentation](docs/)
-- Review [examples](examples/)
-- Join our community discussions
-
----
-
-**Made with ❤️ and duas for better user experiences**✨
-
-## 🌊 White Noise & Ambience
-
-Continuous background sounds for focus, sleep, or relaxation.
+Long, continuous background loops for focus, sleep, meditation, or as atmosphere under videos.
 
 - [Airplane](white_sounds/airplane/airplane.mp3)
 - [Bubbles](white_sounds/bubbles/bubbles.mp3)
@@ -564,3 +543,53 @@ Continuous background sounds for focus, sleep, or relaxation.
 - [Waves](white_sounds/waves/waves.mp3)
 - [Wind](white_sounds/wind/wind.mp3)
 - [Wind Howling](white_sounds/wind-howling/wind-howling.mp3)
+
+## 📊 Technical specifications
+
+**`app/` and `motion/`** (generated and reviewed)
+- **Format:** MP3, 128 kbps, mono, 44.1 kHz
+- **Level:** −3 dBFS peak; app sounds high-passed at 120 Hz
+- **Duration:** most UI sounds 0.1–0.6s; reminders, alarms, loops and motion sounds 1–5s
+- **Total:** 110 sounds (79 app, 31 motion), about 1.8 MB
+
+**Classic collection**
+- **Format:** MP3, 44.1 kHz, 16-bit
+- **Duration:** 0.2–0.7s
+- **Total:** 28 sound effects, plus the white noise and ambience loops
+
+## 🤝 Contributing
+
+Contributions are warmly welcome. The Prophet Muhammad ﷺ said: *"The best of people are those who are most beneficial to people."*
+
+1. **Fork** the repository and create a branch (`git checkout -b feature/new-sound`)
+2. **Add a sound**, either by adding a prompt to `prompts/` and running the [pipeline](#%EF%B8%8F-how-the-sounds-are-made), or by adding a recorded file with a matching `prompts/` entry
+3. **Test** it in a real app or video
+4. **Open a pull request** that says what the sound is and where it's meant to be used
+
+**Sound guidelines**
+- Natural sources only: water, wood, stone, wind, sand, leaves, birds, paper, cloth
+- No instruments, melodies, tuned chimes, bells, jingles or synth risers
+- UI sounds short (under 0.7s), starting right on the sound with no lead-in
+- Consistent level (−3 dB peak) and descriptive, action-based file names
+
+Ideas, bug reports and sound requests are welcome as [issues](../../issues).
+
+## 📄 License
+
+MIT. Free for personal and commercial apps, games and videos. See [LICENSE](LICENSE). Attribution is appreciated, but not required.
+
+## 🙏 Acknowledgments
+
+- **Alhamdulillah**: all praise is due to Allah for the beauty of natural sounds
+- Sounds in `app/` and `motion/` were generated with [ElevenLabs](https://elevenlabs.io) Sound Effects
+- Thanks to everyone who uses, shares and contributes to this collection
+
+---
+
+<div align="center">
+
+**"Whoever guides someone to goodness will have a reward like the one who did it."** (Prophet Muhammad ﷺ)
+
+Made with duas for better user experiences. If this helps you, please ⭐ the repo so others can find it.
+
+</div>
